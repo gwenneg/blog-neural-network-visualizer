@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Neural Network Visualizer</title>
+        <link rel="stylesheet" href="css/neural-network-visualizer.css">
+        <script src="js/neural-network-visualizer.js"></script>
+        <script src="js/controller.js"></script>
+    </head>
+    <body>
+        <h1>Neural Network Visualizer</h1>
+        <div id="style">
+            <div>
+                <label for="color">Color:</label>
+                <input id="color" type="color" value="#4dabf7">
+            </div>
+            <div>
+                <label for="layer-spacing">Layer spacing:</label>
+                <input id="layer-spacing" type="number" min="0" step="1" oninput="validity.valid || (value = '')" value="125">
+            </div>
+            <div>
+                <label for="neuron-radius">Neuron radius:</label>
+                <input id="neuron-radius" type="number" min="0" step="1" oninput="validity.valid || (value = '')" value="12">
+            </div>
+            <div>
+                <label for="neuron-spacing">Neuron spacing:</label>
+                <input id="neuron-spacing" type="number" min="0" step="1" oninput="validity.valid || (value = '')" value="2">
+            </div>
+            <div>
+                <label for="neuron-stroke-width">Neuron stroke width:</label>
+                <input id="neuron-stroke-width" type="number" min="0" step="0.1" oninput="validity.valid || (value = '')" value="2.5">
+            </div>
+            <div>
+                <label for="synapse-stroke-width">Synapse stroke width:</label>
+                <input id="synapse-stroke-width" type="number" min="0" step="0.1" oninput="validity.valid || (value = '')" value="0.2">
+            </div>
+        </div>
+        <div id="left">
+            <div>
+                <h2>Layers</h2>
+                <label for="network-def">Layers</label>
+                <input id="network-def" type="text" value="7, 15, 12, 18, 2">
+                <button id="apply-def">Apply</button>
+            </div>
+            <div>
+                <h2>Mock activations</h2>
+                <button id="init">Init</button>
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+            </div>
+        </div>
+        <div id="neural-network"></div>
+    </body>
+</html>

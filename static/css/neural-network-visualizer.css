@@ -1,0 +1,51 @@
+html {
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    justify-content: center;
+}
+body {
+    width: 1200px;
+}
+h1, h2 {
+    color: rgb(170, 170, 170);
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 50px;
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+h2 {
+    font-size: 25px;
+}
+
+
+
+
+#style {
+    display: flex;
+    justify-content: space-between;
+}
+#style label {
+    color: rgb(170, 170, 170);
+    font-family: Helvetica, sans-serif;
+}
+#style input:not(#color) {
+    font-family: Helvetica, sans-serif;
+    padding: 5px 3px;
+    width: 40px;
+}
+#color {
+    border: 0;
+    padding: 0;
+}
+#top button {
+    padding: 5px 5px;
+}
+#top {
+    padding: 10px;
+}
+#neural-network {
+    text-align: center;
+}
